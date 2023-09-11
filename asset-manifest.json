@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/somilmusic/static/css/main.fb02e487.css",
+    "main.js": "/somilmusic/static/js/main.d35cb297.js",
+    "static/js/787.cda612ba.chunk.js": "/somilmusic/static/js/787.cda612ba.chunk.js",
+    "static/media/Free Music Studio Illustration.png": "/somilmusic/static/media/Free Music Studio Illustration.570937a74b59fd9f05bc.png",
+    "static/media/pngwing.com.png": "/somilmusic/static/media/pngwing.com.75b48a55d962611105c3.png",
+    "static/media/youtube channel logo new version.png": "/somilmusic/static/media/youtube channel logo new version.6df044e2f750e635169c.png",
+    "static/media/munkodhamki.jpg": "/somilmusic/static/media/munkodhamki.f4891750e3360fc39001.jpg",
+    "static/media/1683826361693.jpg": "/somilmusic/static/media/1683826361693.d49c2c12917da37b8fb0.jpg",
+    "static/media/freeverse.jpg": "/somilmusic/static/media/freeverse.6ea1bcb18c56a23897ff.jpg",
+    "static/media/scopebda (2).jpg": "/somilmusic/static/media/scopebda (2).bbc70bb7ba73f133f152.jpg",
+    "static/media/1683831874335.jpg": "/somilmusic/static/media/1683831874335.101b58304d9be70c473e.jpg",
+    "static/media/1683831874313.jpg": "/somilmusic/static/media/1683831874313.43edbf79f69715d3d3d4.jpg",
+    "static/media/reckless.jpg": "/somilmusic/static/media/reckless.c08dc17c5cf4b805b4dd.jpg",
+    "static/media/1683831874347.jpg": "/somilmusic/static/media/1683831874347.5ba0fe26761edb897e09.jpg",
+    "static/media/1683831874324.jpg": "/somilmusic/static/media/1683831874324.f25e7a865d40098c66cc.jpg",
+    "index.html": "/somilmusic/index.html",
+    "main.fb02e487.css.map": "/somilmusic/static/css/main.fb02e487.css.map",
+    "main.d35cb297.js.map": "/somilmusic/static/js/main.d35cb297.js.map",
+    "787.cda612ba.chunk.js.map": "/somilmusic/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb02e487.css",
+    "static/js/main.d35cb297.js"
+  ]
+}
