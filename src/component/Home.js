@@ -19,7 +19,7 @@ const Home = () => {
         <div className="hero-main-content">
             <div className="left-hero-content">
                 <img src={piano} alt="piano" />
-                <h1>Heyy,  I have amazing beats for you</h1>
+                <h1>Heyy,  I don't have amazing beats for you</h1>
                 <NavLink to="/songlist" className="grab-btn">Explore</NavLink>
             </div>
             <div className="right-hero-section">
