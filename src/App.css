@@ -1,38 +1,722 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  overflow-x: hidden;
+  position: relative;
+  /* margin: 0;
+  padding: 0;
+  box-sizing: border-box; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-bar {
+  width: 100vw;
+  height: 8vh;
+  /* box-shadow: 0px 0px 45px 0px lightgray; */
+  z-index: 45;
+  background-color: #242625;
+  color: #242625;
+  position: fixed;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#loginbtn {
+  padding: 5px 18px;
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  font-weight: 600;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-bar .main-container {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0 4rem;
+}
+
+.nav-bar .main-container .contain-logo h2 {
+  margin: 0;
+  padding: 0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-bar .main-container .contain-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-bar .main-container .contain-buttons ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+  text-transform: capitalize;
+  font-size: 18px;
+  color: black;
+}
+
+/* after code for hamburger menu  */
+
+.nav-bar .main-container .mobile-buttons ul {
+  width: 100%;
+  background-color: #242625;
+  opacity: 0.9;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  z-index: 2;
+  flex-direction: column;
+  padding: 0;
+  transition: 0.5s;
+  /* display: none; */
+}
+
+.nav-bar .main-container .mobile-buttons ul li {
+  margin: 10px 0;
+  text-align: center;
+  margin: 15px 0;
+  color: white;
+}
+
+.nav-bar .main-container .mobile-buttons ul li a {
+  color: white;
+}
+
+/* code end  */
+
+.nav-bar .main-container .contain-buttons ul li a {
+  color: white;
+}
+
+.nav-bar .main-container .contain-menu {
+  /* color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: none;
+}
+
+/* hero section  */
+
+.first-hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ebf5ee;
+  /* padding-top: 8vh; */
+}
+
+.first-hero .hero-main-content {
+  padding: 0 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-around;
+}
+
+.first-hero .hero-main-content .left-hero-content {
+  width: 30rem;
+  line-height: 5rem;
+}
+
+.first-hero .hero-main-content .left-hero-content img {
+  /* width: 50rem; */
+  height: 27rem;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  opacity: 0.14;
+  z-index: -1;
+  /* background-color: aquamarine; */
+  /* z-index: 10; */
+  display: none;
+}
+
+.first-hero .hero-main-content .left-hero-content h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  z-index: 100;
+}
+
+.first-hero .hero-main-content .left-hero-content .grab-btn {
+  padding: 1rem 3rem;
+  background-color: #242625;
+  color: white;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.right-hero-section img {
+  width: 42rem;
+}
+
+/* login form styling */
+
+.main-login-container {
+  background-color: #e1e6ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 8vh;
+}
+
+.main-login-container .main-login-content {
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 10px 10px 45px lightgray;
+}
+
+.main-login-container .main-login-content .login-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-login-container .main-login-content .login-content h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+.main-login-container .main-login-content .login-content form {
+  width: 100%;
+}
+
+.main-login-container .main-login-content .login-content input {
+  width: 30rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  margin: 12px 5rem;
+  outline: none;
+  padding: 2px 10px;
+}
+
+#login-submit {
+  width: 8rem;
+  padding: 0;
+  height: 40px;
+  border: none;
+  background-color: #429bed;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  margin: 1rem 5rem;
+  border-radius: 2px;
+}
+
+.main-login-container .main-login-content .login-content .signup-link {
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+/* song list style  */
+
+.song-list {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+  padding-top: 8vh;
+}
+
+.song-list table {
+  width: 72%;
+  margin: 2rem 1rem;
+  border-collapse: collapse;
+  /* background-color: antiquewhite; */
+}
+
+th {
+  font-size: 15px;
+}
+
+td,
+th {
+  padding: 12px 1rem;
+}
+
+td {
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+td img {
+  width: 45px;
+}
+
+td ion-icon {
+  font-size: 30px;
+  color: black;
+}
+
+.clm-first {
+  width: 1rem;
+  border: none;
+}
+
+.clm-second {
+  padding-left: 0;
+}
+
+.clm-third {
+  width: 6rem;
+}
+
+.clm-fourth {
+  width: 1rem;
+}
+
+.clm-sixth {
+  width: 1rem;
+}
+
+.clm-seventh {
+  width: 1rem;
+}
+
+.clm-eighth {
+  color: black;
+  width: 7rem;
+}
+
+/* home page explore btn css */
+
+.explore {
+  /* width: 100vw; */
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.explore .explore-btn {
+  padding: 1rem 3rem;
+  /* background-color: aqua; */
+  background-color: #242625;
+  /* font-size: 18px; */
+  font-weight: 600;
+  color: white;
+  border-radius: 3px;
+}
+
+/* contact form css */
+
+.main-contact-container {
+  background-color: #e1e6ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin: 4rem 0 0 0;
+  width: 100%;
+}
+
+/* .main-contact-container .main-contact-content{
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 10px 10px 45px lightgray;
+} */
+
+.main-contact-container .main-contact-content .contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-contact-container .main-contact-content .contact-content h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+.main-contact-container .main-contact-content .contact-content form {
+  width: 100%;
+}
+
+.main-contact-container .main-contact-content .contact-content input {
+  width: 36rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid black;
+  margin: 15px 5rem;
+  outline: none;
+  padding: 2px 0;
+}
+
+#contact-submit {
+  width: 8rem;
+  padding: 0;
+  height: 40px;
+  border: none;
+  background-color: #242625;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  margin: 2rem 5rem;
+  border-radius: 2px;
+}
+
+/* footer css 
+ */
+
+.main-footer {
+  background-color: #242625;
+  width: 100%;
+  /* height: 40vh; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* height: 40vh; */
+}
+
+.main-footer .main-footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 80%;
+  padding: 6rem 0;
+  /* background-color: antiquewhite; */
+  color: white;
+}
+
+.main-footer .main-footer-content ul {
+  line-height: 28px;
+}
+
+.main-footer .main-footer-content ul li a {
+  color: white;
+}
+
+.main-footer .main-footer-content .fourth-list .social-media-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* .main-footer .main-footer-content .fourth-list .social-media-logo li a ion-icon{
+  border: thin solid white;
+  padding: 8px 8px;
+  border-radius: 50%;
+ } */
+
+/* play pause pannel css */
+
+.play-pause-container {
+  background-color: #242625;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 8vh;
+  z-index: 40;
+  /* background-color: gray; */
+}
+
+.play-pause-container .play-pause-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 4rem;
+  margin: 0;
+  padding: 0 17px;
+}
+
+/* .play-pause-container .play-pause-content .play-pause-function {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+  background-color: black;
+  padding: 0;
+ } */
+/* 
+ .play-pause-container .play-pause-content .play-pause-function{
+  background-color: blanchedalmond;
+ } */
+
+.play-pause-container .play-pause-content .play-pause-function ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: antiquewhite; */
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+}
+
+.play-pause-container .play-pause-content .play-pause-function ul li a {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.play-pause-container
+  .play-pause-content
+  .play-pause-function
+  ul
+  li
+  a
+  ion-icon {
+  font-size: 2rem;
+  /* background-color: #e1e6ed; */
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.play-pause-container
+  .play-pause-content
+  .play-pause-function
+  .play-btn
+  a
+  ion-icon {
+  font-size: 58px;
+}
+
+.play-pause-container
+  .play-pause-content
+  .play-pause-function
+  .prev-play
+  a
+  ion-icon {
+  font-size: 20px;
+}
+
+.play-pause-container
+  .play-pause-content
+  .play-pause-function
+  .loop-shuffle
+  a
+  ion-icon {
+  font-size: 18px;
+}
+
+.play-pause-container .play-pause-content .song-img {
+  width: 8vw;
+  /* background-color: #429bed; */
+}
+
+.play-pause-container .play-pause-content .song-img ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.play-pause-container .play-pause-content .song-img ul li a {
+  color: white;
+}
+
+.play-pause-container .play-pause-content .song-img ul li a img {
+  width: 60px;
+}
+
+.play-pause-container .play-pause-content .song-volume ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.play-pause-container .play-pause-content .song-volume ul li a {
+  color: white;
+}
+
+.play-pause-container .play-pause-content .song-volume {
+  width: 8vw;
+}
+
+/* about us page css */
+
+.youtube-logo {
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  gap: 2rem;
+  text-transform: capitalize;
+  background-color: #e1e6ed;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.youtube-logo h1 {
+  font-size: 30px;
+  line-height: 3rem;
+}
+
+.youtube-logo img {
+  width: 20rem;
+  border-radius: 50%;
+  box-shadow: 16px 16px 45px lightgray;
+}
+
+/* media queries  */
+
+@media only screen and (max-width: 700px) {
+  .nav-bar .main-container .contain-buttons ul {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  #loginbtn {
+    margin: 0;
+  }
+  .nav-bar .main-container .contain-menu {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-hero {
+    justify-content: center;
+    padding-top: 1rem;
+    height: 80vh;
+    padding-top: 14vh;
+  }
+  .first-hero .hero-main-content {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .first-hero .hero-main-content .right-hero-section {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+    margin-top: 0;
+  }
+  .first-hero .hero-main-content .right-hero-section img {
+    width: 20rem;
+  }
+  .first-hero .hero-main-content .left-hero-content {
+    text-align: center;
+    width: 80%;
+  }
+  .first-hero .hero-main-content .left-hero-content h1 {
+    font-size: 2rem;
+  }
+  /* .song-list table{
+    width: inherit;
+  } */
+  th {
+    font-size: 10px;
+  }
+  td {
+    font-size: 10px;
+  }
+  td ion-icon {
+    font-size: 20px;
+  }
+  td img {
+    width: 24px;
+  }
+  td,
+  th {
+    padding: 12px 9px;
+  }
+  .main-contact-container .main-contact-content .contact-content input {
+    width: 14rem;
+  }
+  .main-footer .main-footer-content {
+    text-align: center;
+    display: block;
+    /* background-color: aqua; */
+  }
+  .main-footer .main-footer-content ul {
+    line-height: 2rem;
+    padding: 0;
+    margin: 3rem 0;
+  }
+  .main-footer .main-footer-content .fourth-list .social-media-logo {
+    gap: 1rem;
+  }
+
+  /* play pause media query */
+  .play-pause-container .play-pause-content {
+    gap: 2rem;
+  }
+  .play-pause-container .play-pause-content .play-pause-function ul {
+    gap: 5px;
+  }
+  .play-pause-container .play-pause-content .song-img {
+    width: 8vw;
+    font-size: 15px;
+  }
+  .play-pause-container .play-pause-content .song-img .playpause-heading {
+    display: none;
+  }
+  .play-pause-container .play-pause-content .song-img ul li a img {
+    width: 3rem;
+  }
+
+  .play-pause-container .play-pause-content .song-volume {
+    width: 8vw;
+  }
+  .song-list {
+    padding-top: 10px;
+  }
+  /* login page responsive */
+  .main-login-container .main-login-content {
+    width: 90vw;
+    /* background-color: #429bed; */
+  }
+  .main-login-container .main-login-content .login-content {
+    width: 100%;
+    /* background-color: antiquewhite; */
+  }
+  .main-login-container .main-login-content .login-content form {
+    /* background-color: rgb(161, 133, 96); */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main-login-container .main-login-content .login-content form input {
+    width: 70%;
+    /* background-color: aqua; */
+    margin: 0 5rem;
+  }
+  /* logo img styling */
+  .youtube-logo img {
+    width: 16rem;
   }
 }
