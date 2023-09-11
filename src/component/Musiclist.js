@@ -97,7 +97,7 @@ const Musiclist = () => {
                 </tr>
                 <tr>
                     <td className="clm-first"><NavLink to="/"><img src={eighthsong} alt="banner" /></NavLink></td>
-                    <td className="clm-second">ERADICATR</td>
+                    <td className="clm-second">ERADICATE</td>
                     <td className="clm-third">3:40</td>
                     <td className="clm-fourth">140</td>
                     <td className="clm-fifth"></td>

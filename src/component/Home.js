@@ -19,7 +19,7 @@ const Home = () => {
         <div className="hero-main-content">
             <div className="left-hero-content">
                 <img src={piano} alt="piano" />
-                <h1>Hi, I have amazing beats for you</h1>
+                <h1>Heyy,  I have amazing beats for you</h1>
                 <NavLink to="/songlist" className="grab-btn">Explore</NavLink>
             </div>
             <div className="right-hero-section">
@@ -112,7 +112,7 @@ const Home = () => {
                 </tr>
                 <tr>
                     <td className="clm-first"><NavLink to="/"><img src={eighthsong} alt="banner" /></NavLink></td>
-                    <td className="clm-second">ERADICATR</td>
+                    <td className="clm-second">ERADICATE</td>
                     <td className="clm-third">3:40</td>
                     <td className="clm-fourth">140</td>
                     <td className="clm-fifth"></td>

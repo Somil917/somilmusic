@@ -1,7 +1,7 @@
 import React from 'react'
 import {Routes, Route} from 'react-router-dom'
-import Navbar from './component/Navbar'
 import './App.css';
+import Navbar from './component/Navbar'
 import About from './component/About';
 // import Contact from './component/Contact';
 // import Services from './component/Services';
@@ -15,13 +15,13 @@ const App = () => {
     <>
       <Navbar/>
       <Routes>
-        <Route exact path='/' element={<Home/>}/>
-        <Route path='/aboutus' element={<About/>}/>
+        <Route exact path='/somilmusic' element={<Home/>}/>
+        <Route exact path='/aboutus' element={<About/>}/>
         {/* <Route path='/contact' element={<Contact/>}/> */}
         {/* <Route path='/services' element={<Services/>}/> */}
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/signup' element={<Signup/>}/>
-        <Route path='/songlist' element={<Musiclist/>}/>
+        <Route exact path='/login' element={<Login/>}/>
+        <Route exact path='/signup' element={<Signup/>}/>
+        <Route exact path='/songlist' element={<Musiclist/>}/>
       </Routes>
     </>
   )

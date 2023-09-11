@@ -10,11 +10,11 @@ const Navbar = () => {
         <nav className="nav-bar">
             <div className="main-container">
                 <div className="contain-logo">
-                    <NavLink to="/"><h2>SOMIL</h2></NavLink>
+                    <NavLink to="/somilmusic"><h2>SOMIL</h2></NavLink>
                 </div>
                 <div className={openMenu ?  "mobile-buttons" : "contain-buttons"}>
                     <ul>
-                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="/somilmusic">Home</NavLink></li>
                         <li><a href="#web_foot">Services</a></li>
                         <li><a href="#contact_page">Contact</a></li>
                         <li><NavLink to="/aboutus">AboutUs</NavLink></li>
